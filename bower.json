@@ -1,0 +1,30 @@
+{
+  "name": "lab",
+  "authors": [
+    "Ivan Nikitovic <ivan.nikitovic@shiftplanning.com>"
+  ],
+  "description": "nasa mala radionica",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton-less": "latest",
+    "normalize-css": "latest",
+    "components-font-awesome": "^4.5.0",
+    "requirejs": "^2.2.0",
+    "jquery": "^2.2.2",
+    "CanJS": "canjs#^2.3.21",
+    "requirejs-canjs-templates": "0.3.0",
+    "text": "requirejs-text#^2.0.14",
+    "validate": "validate.js#^0.9.0",
+    "moment": "momentjs#^2.12.0"
+  }
+}

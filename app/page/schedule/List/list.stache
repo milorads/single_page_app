@@ -1,0 +1,27 @@
+<div class="container v-align narrow">
+    {{#if isLoading}}
+        <div class="loader"><i class="fa fa-cutlery"></i></div>
+    {{else}}
+    <div class="row">
+        <h4>
+            <span>Schedule</span>
+            <a class="fr fs-5" href="/#!schedule/add">
+                <i class="fa fa-plus"></i> Add Entry
+            </a>
+        </h4>
+    </div>
+    <ul>
+        {{#each schedule}}
+            <li class="ell">
+                <span class="date">{{date.formatDate}}</span>
+                <a href="/#!menus/{{menuId}}"> {{menu.name}} </a>
+                <span class="fr cursorPointer">
+                    <a href="#" data-action="remove-schedule" data-id="{{id}}">
+                        <i class="pl5 fa {{#if isRemoving}}fa-spinner fa-spin{{else}}fa-trash-o{{/if}}"></i>
+                    </a>
+                </span>
+            </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</div>

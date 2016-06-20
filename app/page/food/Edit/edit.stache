@@ -1,0 +1,52 @@
+<div class="container v-align narrow">
+    {{#if isLoading}}
+        <div class="loader"><i class="fa fa-cutlery"></i></div>
+    {{else}}
+        <form data-form="edit-food">
+            <div class="row">
+                <h4 class="col-12">Food Details
+                    <a href=""
+                       data-action="remove-food"
+                       class="fr fs-5"
+                       {{#if isSaving}}disabled="disabled"{{/if}}>
+                        Remove <i class="pl5 fa {{#if isRemoving}}fa-spinner fa-spin{{else}}fa-trash-o{{/if}}"></i>
+                    </a>
+                </h4>
+            </div>
+
+
+        <div class="row">
+            <label class="col-4" for="name">Name: </label>
+            <input class="col-8" type="text" name="name" id="name" value="{{food.name}}" autofocus>
+        </div>
+        {{#if errors.name}}
+        <div class="row">
+            <span class="col-6 off-6">{{errors.name}}</span>
+        </div>
+        {{/if}}
+
+
+        <div class="row">
+            <label class="col-4" for="description">Description: </label>
+            <textarea class="col-8 rsn rh-4"
+                      name="description"
+                      id="description">{{food.description}}</textarea>
+        </div>
+        {{#if errors.description}}
+
+         <div class="row">
+            <span class="col-6 off-6" style="color:red;">{{errors.description }}</span>
+         </div>
+         {{/if}}
+
+         <hr>
+
+         <div class="row">
+            <button class="button-primary off-8 col-4"
+                {{#if isRemoving}}disabled="disabled"{{/if}}>
+                <i class="fa {{#if isSaving}}fa-spinner fa-spin{{else}}fa-save{{/if}}"></i> Save changes
+            </button>
+         </div>
+     </form>
+    {{/if}}
+</div>

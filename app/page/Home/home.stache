@@ -1,0 +1,32 @@
+   <div class="container v-align narrow">
+        <div class="row">
+            <h5>
+                <a class="fl mr-1-5"><i class="fa fa-chevron-left"></i></a>
+                <span class="fl mr-1-5">14. Mart 16</span>
+                <a class="fl  mr-1-5"><i class="fa fa-chevron-right"></i></a>
+            </h5>
+        </div>
+        <hr>
+        <ol>
+            <li>
+                <p><b>Berghoff Casserole</b></p>
+                        <span><i>Spätzle, creamed spinach, gouda cheese sauce,
+                            Applewood bacon gratinée, rye crostini, celery stick</i></span>
+            </li>
+            <hr>
+            <li>
+                <p><b>Salmon and Rock Shrimp Cake</b></p>
+                <span><i>Pan-seared cakes, caper dill beurre blanc, garlic crostini</i></span>
+            </li>
+            <hr>
+            <li>
+                <p><b>Potato Pierogies</b></p>
+                <span><i>Sautéed dumplings served with sour cream, sweetpotato salad</i></span>
+            </li>
+            <hr>
+            <li>
+                <p><b>Mini Brat and Knockwurst</b></p>
+                <span><i>Sauerkraut, Düsseldorf mustard, German potato salad</i></span>
+            </li>
+        </ol>
+    </div>

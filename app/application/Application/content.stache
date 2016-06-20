@@ -1,0 +1,9 @@
+<header>
+    <div class="container h-full">
+        <div class="row h-full">
+            <a class="logo col-3" href="/#!"><i class="fa fa-cutlery"></i> {{name}}</a>
+        </div>
+    </div>
+</header>
+
+<main class="v-align-parent"></main>

@@ -1,0 +1,24 @@
+<div class="container v-align narrow">
+    {{#if isLoading}}
+        <div class="loader"><i class="fa fa-cutlery"></i></div>
+    {{else}}
+        <div class="row">
+            <h4>
+                <span>Foods</span>
+                <a class="fr fs-5" href="/#!foods/add">
+                    <i class="fa fa-plus"></i> Add Food
+                </a>
+            </h4>
+        </div>
+        <div class="row">
+            <ul>
+                {{#each foods}}
+                    <li>
+                        <a href="#!foods/{{id}}" class="ttu">{{name}}</a>
+                        <span>{{description}}</span>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    {{/if}}
+</div>

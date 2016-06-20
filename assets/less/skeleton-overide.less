@@ -1,0 +1,120 @@
+@import "/lib/skeleton-less/less/skeleton.less";
+@import "vars";
+
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+@bp-larger-than-mobile: 400px;
+@bp-larger-than-phablet: 550px;
+@bp-larger-than-tablet: 750px;
+@bp-larger-than-desktop: 1000px;
+@bp-larger-than-desktophd: 1200px;
+
+// Colors
+@light-grey: @color-grey-light;
+@dark-grey: @color-grey-dark;
+@primary-color: @color-primary;
+
+@secondary-color: lighten(@dark-grey, 13.5%);
+
+@border-color: @color-grey;
+
+//TODO: Definisi ovu boju
+@link-color: @color-primary-light;
+
+@font-color: @color-black;
+
+// Grid Variables
+@container-width: 960px;
+@container-narrow-width: (@container-width * 0.52);
+@container-mid-width: (@container-width * 0.75);
+
+// Misc
+@global-radius: 0;
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container.narrow {
+  max-width: @container-narrow-width;
+}
+.container.mid {
+  max-width: @container-mid-width;
+}
+
+/*
+  Columns
+*/
+.col {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  .col-@{i}:extend(.col) {
+  }
+
+  .generate-columns(@n, (@i + 1));
+}
+
+.generate-columns(12);
+
+@media (min-width: @bp-larger-than-phablet) {
+  .col {
+    margin-left: @column-margin / 2;
+    margin-right: @column-margin / 2;
+  }
+
+  .generate-offset(@n, @i: 1) when (@i =< @n) {
+    &.off-@{i} {
+      .grid-offset-length(@i);
+    }
+
+    .generate-offset(@n, (@i + 1));
+  }
+
+  .generate-columns(@n, @i: 1) when (@i =< @n) {
+    .col-@{i}:extend(.col) {
+      .grid-column-width(@i);
+
+      //https://github.com/less/less.js/issues/2809
+      &:last-child {
+        margin-right: 0;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+
+      .generate-offset(@total-columns - @i);
+    }
+
+    .generate-columns(@n, (@i + 1));
+  }
+
+  .generate-columns(@total-columns);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button,
+button {
+  padding: 0 10px;
+}
+
+button {
+  color: red;
+  &:before {
+    content : " ";
+    position : absolute;
+    width: 10px;
+    height: 10px;
+    color: red;
+  }
+}

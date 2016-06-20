@@ -1,0 +1,72 @@
+{ "schedules": [
+  {
+    "date": "4/3/2016",
+    "menuId": 3,
+    "id": "b40e7bc0-d9cc-4e08-bc8e-5fcadf50ab19"
+  },
+  {
+    "date": "4/4/2016",
+    "menuId": 4,
+    "id": "ec48083e-1559-4a17-96ae-9b876abe8fd8"
+  },
+  {
+    "date": "4/1/2016",
+    "menuId": 6,
+    "id": "ff06f970-0a89-4b07-97b0-a51d03cff38f"
+  },
+  {
+    "date": "4/1/2016",
+    "menuId": 3,
+    "id": "0b4b847c-427a-4cc7-a687-d940a491745e"
+  }
+  ],
+  "menus": [
+    {
+      "name": "Nesto specijalno",
+      "id": 3
+    },
+    {
+      "name": "Neki novi meni",
+      "id": 4
+    },
+    {
+      "name": "nesto sto sada pravimo",
+      "id": 5
+    },
+    {
+      "name": "neko krace ime",
+      "id": 6
+    },
+    {
+      "name": "Test menu",
+      "id": 7
+    }
+  ],
+  "foods": [
+    {
+      "name": "Sargarepa",
+      "description": "Dobra je za oci",
+      "id": 1
+    },
+    {
+      "name": "Luk",
+      "description": "Od njega se place",
+      "id": 2
+    },
+    {
+      "name": "Przenice",
+      "description": "Das ist fantastisch",
+      "id": 3
+    },
+    {
+      "name": "Sarme",
+      "description": "Kud ce Srbin bez sarme",
+      "id": 4
+    },
+    {
+      "name": "Lazanje",
+      "description": "Lazanje koje kidaju.",
+      "id": 5
+    }
+  ]
+}

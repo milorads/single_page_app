@@ -1,0 +1,31 @@
+<div class="container v-align narrow">
+    <div class="row">
+        <h4 class="col-12">Sign In to your account</h4>
+    </div>
+
+    <div class="row">
+        <label class="col-4" for="email">Email: </label>
+        <input class="col-8" type="email" name="email" id="email" autofocus>
+    </div>
+
+    <div class="row">
+        <label class="col-4" for="password">Password: </label>
+        <input class="col-8" type="password" name="password" id="password">
+    </div>
+
+    <div class="row">
+        <button class="button-primary off-8 col-4"><i class="fa fa-unlock-alt"></i> Sign In</button>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <h4 class="col-12">Get started - it's free</h4>
+    </div>
+
+    <div class="row">
+        <a class="off-3 col-6 button button-primary" href="/#!signup">
+            <i class="fa fa-user-plus"></i> Create account
+        </a>
+    </div>
+</div>
