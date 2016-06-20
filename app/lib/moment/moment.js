@@ -1,8 +1,4 @@
 /**
- * Created by ivan on 3.4.16..
- */
-
-/**
  * Biblioteka koju koristimo za manipulaciju datumima
  *
  * http://momentjs.com/

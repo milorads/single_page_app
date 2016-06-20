@@ -1,7 +1,3 @@
-/**
- * Created by ivan on 29.3.16..
- */
-
 
 define([
 	'validate-lib'
