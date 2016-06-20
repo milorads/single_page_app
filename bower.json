@@ -1,9 +1,9 @@
 {
-  "name": "lab",
+  "name": "it-app",
   "authors": [
-    "Ivan Nikitovic <ivan.nikitovic@shiftplanning.com>"
+    "Milorad Sekulovic <milorad.sekulovic@gmail.com>"
   ],
-  "description": "nasa mala radionica",
+  "description": "single page app",
   "main": "index.html",
   "moduleType": [],
   "license": "MIT",

@@ -1,4 +1,4 @@
-# [HUMANITY](https://www.humanity.com/) - Knowledge Lab
+# Single page test app - IT
 
 ## Dependencies
 * [git](https://git-scm.com/) - Distributed version control system 
@@ -57,3 +57,5 @@ $ json-server db.json --delay 300
 
 ##Open application
 [Lab](http://127.0.0.1:8080) Visit the link
+
+# Thanks to:  [HUMANITY](https://www.humanity.com/) - Knowledge Lab
